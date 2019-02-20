@@ -34,16 +34,18 @@ Then use something like VS Code, https://code.visualstudio.com/ to search the cl
 2. Disable Just My Code in Debugging\General settings.
 3. Enable Source Link support in Debugging. You must have VS 2017 15.3 or later.
 4. Enable the Microsoft Symbol Servers in Debugging\Symbols
-5. Step into .NET Framework code
+5. Step into .NET Core code, e.g. String.Join, List<T> constructor.
 6. Or click farther up in the call stack when on a breakpoint.
 7. It will prompt you to download the raw source code file from the GitHub repository.
 8. Now that you have the source code file, you can set breakpoints in the .NET Core code.
 9. Copied from this Steve Gordon Blog, https://www.stevejgordon.co.uk/debugging-asp-net-core-2-source
+10. In you want to clean the downloaded files, go to C:\Users\\[YourUserName]\AppData\Local\SourceServer and delete the subfolders.
 
 ## How do I debug the .NET Framework?
 
-1. See above.
-2. The steps are basically the same.
+**I couldn't get it to work**
+1. Try https://referencesource.microsoft.com/setup.html
+2. http://www.symbolsource.org/Public/Home/VisualStudio
 
 ## What is source link?
 
